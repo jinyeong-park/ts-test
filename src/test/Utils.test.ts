@@ -57,14 +57,14 @@ describe('Utils test suite', () => {
   })
 
   // way3
-  test.only('test invalid URL with try catch', () => {
-    try {
-      Utils.parseUrl('');
-    } catch(error) {
-      expect(error).toBeInstanceOf(Error);
-      expect(error).toHaveProperty('message', 'Empty url!');
-    }
-  })
+  // test.only('test invalid URL with try catch', () => {
+  //   try {
+  //     Utils.parseUrl('');
+  //   } catch(error) {
+  //     expect(error).toBeInstanceOf(Error);
+  //     expect(error).toHaveProperty('message', 'Empty url!');
+  //   }
+  // })
 
 
 })

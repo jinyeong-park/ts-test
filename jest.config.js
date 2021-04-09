@@ -10,5 +10,7 @@ module.exports = {
     "**/?(*.)+(spec|test).+(ts|tsx|js)"
   ],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  verbose: true
+  verbose: true,
+  collectCoverage: true,
+  collectCoverageFrom: ['<rootDir>/src/app/**/*.ts']
 }
