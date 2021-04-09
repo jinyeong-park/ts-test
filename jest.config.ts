@@ -1,11 +1,15 @@
-module.exports = {
-  "roots": [
+// jest.config.ts
+import type { Config } from '@jest/types';
+
+// Sync object
+const config: Config.InitialOptions = {
+  roots: [
     "<rootDir>/src"
   ],
-  "transform": {
+  transform: {
     "^.+\\.(ts|tsx)$": "ts-jest"
   },
-  "testMatch": [
+  testMatch: [
     "**/__tests__/**/*.+(ts|tsx|js)",
     "**/?(*.)+(spec|test).+(ts|tsx|js)"
   ],
@@ -13,4 +17,6 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: ['<rootDir>/src/app/**/*.ts']
-}
+};
+
+export default config;
